@@ -40,4 +40,6 @@ db.user.belongsToMany(db.role, {
 
 db.ROLES = ["user", "admin", "moderator"];
 
+db.tutorials = require("./tutorial.model.js")(sequelize, Sequelize);
+
 module.exports = db;
